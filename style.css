@@ -1,0 +1,53 @@
+:root {
+    --color-bg: hsl(0, 0%, 18%);
+    --color-txt: hsl(0, 0%, 82%);
+    scroll-behavior: smooth;
+    font-family: Poppins, sans-serif;    
+}
+
+
+body {
+    background-color: var(--color-bg, black);
+    color: var(--color-txt, white);
+}
+
+header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 2px red solid;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: 4px blue solid;
+}
+
+.menu-svg {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    border: 4px purple solid;
+}
+
+.nav-item {
+    text-decoration: none;
+    color:aliceblue
+}
+
+.nav-list {
+    list-style: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 10px 20px;
+}
+

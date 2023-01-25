@@ -8,9 +8,9 @@ Espero que encuentre estos proyectos interesantes y con un diseño agradable. Si
  
 <br>
  
-## [EN] 
+### [EN] 
  
-As a front-end web developer, my portfolio includes a variety of personal projects that I have completed. Each project includes a detailed description, screenshots and a link to try it online. 
+As a front-end web developer, my portfolio includes a variety of personal projects that I have completed. Each project includes a detailed description, screenshots and a link. 
  
 Among the technologies used in these projects are HTML, CSS and JavaScript. 
  
