@@ -1,36 +1,42 @@
-:root {
-    --color-bg: hsl(0, 0%, 18%);
-    --color-txt: hsl(0, 0%, 82%);
-    scroll-behavior: smooth;
-    font-family: Poppins, sans-serif;
-}
+/* font rem 
+margin padding em
+*/
 
+:root {
+    --color-bg: hsl(0, 0%, 10%); /* hsl(0, 0%, 18%); */
+    --color-txt: hsl(0, 0%, 90%); /* hsl(0, 0%, 82%); */
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--color-bg, black);
     color: var(--color-txt, white);
-    margin: 0;
+    font-family: Poppins, sans-serif;
+    margin: 1.5em;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
 
 header {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: max-content;
-    padding: 0;
-    align-items: center;
-    /* border: 1px red solid; */
     justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
-.title > h1 {
-    width: fit-content;
-    height: 3rem;
-    margin: 0;
+.title {
+    font-size: 2rem;
+    font-weight: bold;
     padding: 0;
-    border: 1px blue solid;
-    align-self: flex-start;
+    margin: 0;
 }
 
 nav {
@@ -40,11 +46,10 @@ nav {
 }
 
 .menu-svg {
-    width: 2.5em;
-    height: 2.5em;
+    width: 2em;
     margin: 0;
     padding: 0;
-    border: 1px purple solid;
+    fill:var(--color-txt);
     cursor: pointer;
 }
 
@@ -57,30 +62,59 @@ nav {
 }
 
 .nav-item {
-    text-decoration: none;
-    color: inherit;
     border: 1px orange solid;
 }
 
-.info {
+/* INFO */
+
+.info-wrapper {
     display: flex;
-    justify-content: center;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    justify-content: flex-start;
+    align-items: center;
+    height: 12vh;
+    margin-bottom: 1.5em;
 }
+
+.section-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* WORK */
 
 .work-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    margin: 0;
+    margin-bottom: 1.5em;
     padding: 0;
 }
 
 .work-container {
-    border: 2px green solid;
+    width: 40vw;
+    margin-bottom: 1em;
 }
 
 .work-shot {
+    width: 100%;
     aspect-ratio: 16/9;
+    outline: 1px purple solid;
+}
+
+.work-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.work-description {
+    font-size: 0.9rem;
+    margin: 0.2em 0 0.5em 0;
+}
+
+.work-link {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: underline;
 }
