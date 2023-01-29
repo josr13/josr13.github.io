@@ -1,10 +1,14 @@
-/* font rem 
-margin padding em
-*/
+/* font rem ---- margin padding  width em */
 
 :root {
     --color-bg: hsl(0, 0%, 10%); /* hsl(0, 0%, 18%); */
     --color-txt: hsl(0, 0%, 90%); /* hsl(0, 0%, 82%); */
+    --color-nav-bg: hsl(0, 0%, 18%);
+    --color-nav-hover: hsl(0, 0%, 34%);
+    --color-txt-hover: hsl(0, 0%, 94%);
+    --color-btn: hsl(219, 89%, 13%); /* not sure */
+    --color-btn-hover: hsl(219, 89%, 20%);
+    --color-btn-active: hsl(219, 89%, 20%);
     scroll-behavior: smooth;
 }
 
@@ -12,7 +16,7 @@ body {
     background-color: var(--color-bg, black);
     color: var(--color-txt, white);
     font-family: Poppins, sans-serif;
-    margin: 1.5em;
+    margin: 1.5em
 }
 
 a {
@@ -37,32 +41,60 @@ header {
     font-weight: bold;
     padding: 0;
     margin: 0;
-}
-
-nav {
-    display: none;
-    border: 1px yellow solid;
-    /* transform: translateX(500%); */
+    height: 2em;
 }
 
 .menu-svg {
     width: 2em;
     margin: 0;
     padding: 0;
-    fill:var(--color-txt);
+    fill: var(--color-txt, white);
     cursor: pointer;
 }
 
-.nav-container {
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: var(--color-nav-bg, dimgray);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+}
+
+.close-svg {
+    float: right;
+    width: 2em;
+    margin: 2em;
+    padding: 0;
+    fill: var(--color-txt);
+    cursor: pointer;
+}
+
+.close-svg:hover {
+    fill: hsl(0, 0%, 94%);
+    transition: 300ms ease-in-out;
+}
+
+.nav-container {    
     list-style: none;
-    display: block;
-    position: sticky;
-    margin: 0;
+    margin-top: 7.5em;
     padding: 0;
 }
 
 .nav-item {
-    border: 1px orange solid;
+    display: block;
+    font-size: 1.3rem;
+    padding: 0.75em 0 0.75em 0;
+    text-align: center;
+}
+
+.nav-item:hover{
+    background-color: var(--color-nav-hover, silver);
+    color: hsl(0, 0%, 94%);
+    transition: 300ms ease-in-out;
 }
 
 /* INFO */
@@ -75,10 +107,12 @@ nav {
     margin-bottom: 1.5em;
 }
 
+/* SECTIONS */
+
 .section-name {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
 }
 
 /* WORK */
@@ -98,8 +132,8 @@ nav {
 
 .work-shot {
     width: 100%;
-    aspect-ratio: 16/9;
-    outline: 1px purple solid;
+    aspect-ratio: 16/9; /* placeholder, bc shots'll be 16:9 anyway */
+    outline: 1px  white solid; /* remove later */
 }
 
 .work-name {
@@ -117,4 +151,43 @@ nav {
     font-size: 0.9rem;
     font-weight: bold;
     text-decoration: underline;
+}
+
+/* CONTACT */
+
+.mail-button{
+    display: flex;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 1.1em;
+    width: 13.5em;
+    height: 1.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(219, 90%, 30%); /* var(--color-btn, darkslateblue) */
+    border: 0;
+    border-radius: 4px;
+}
+
+.mail-button:hover {
+    background-color: hsl(219, 90%, 25%);
+}
+
+.mail-button:hover::before {
+    content: "📧\00a0";
+}
+
+.mail-button:active {
+    margin-bottom: 0.5em;
+    width: 13em;
+    height: 1.2em;
+    border: 2px hsl(219, 90%, 48%) solid;
+}
+
+.mail-button:focus {
+    background-color: hsl(219, 90%, 33%);
+}
+
+.mail-button:focus::before {
+    content: "📧\00a0";
 }

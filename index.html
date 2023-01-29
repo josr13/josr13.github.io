@@ -13,25 +13,27 @@
 </head>
 <body>
     <header>
-        <a  href="#" class="title">Portfolio</a>
+        <a href="#" class="title">Portfolio</a>
         <nav>
+            <svg class="close-svg" viewBox="0 0 512 512">
+                <path d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/>
+            </svg>
             <ul class="nav-container">
-                <li><a href="#" class="nav-item">Proyectos</a></li>
+                <li><a href="#work" class="nav-item">Proyectos</a></li>
                 <li><a href="#" class="nav-item">Información</a></li>
                 <!-- <li><a href="#" class="nav-item">CV</a></li> -->
-                <li><a href="#" class="nav-item">Contacto</a></li>
+                <li><a href="#contact" class="nav-item">Contacto</a></li>
             </ul>
-
         </nav>
-        <svg class="menu-svg" viewBox="0 0 448 512">
+        <svg class="menu-svg" viewBox="0 0 448 512" onclick="index.js">
             <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
         </svg>
     </header>
     <main>
-        <div class="info-wrapper">Hello! I'm a front-end web developer focused on creating visually appealing and user-friendly websites.</div>
+        <div class="info-wrapper">Hello! I'm a front-end web developer focused on creating visually appealing user-friendly websites.</div>
         <section class="work-section">
             <div class="section-name">Work</div>
-            <div class="work-group">
+            <div class="work-group" id="work">
                 <div class="work-container">
                     <img src="/images/shots/#" alt="" class="work-shot">
                     <div class="work-name">Proyecto 1</div>
@@ -58,8 +60,9 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <div class="section-name">Contact me</div>
+            <a class="mail-button" href="mailto:placeholder@gmail.com">placeholder@gmail.com</a>
         </section>
     </main>
 </body>
