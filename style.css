@@ -285,9 +285,9 @@ nav {
     /* INFO */
 
     .info-wrapper {
-        height: 30vh;
+        height: fit-content;
         width: 50vw;
-        margin-bottom: 2em;
+        margin: 2em 0 4em 0;
         font-size: 1.1rem;
     }
 
@@ -341,4 +341,24 @@ nav {
         font-size: 1.15rem;
     }
     
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    body {
+        margin: 1.5em 16em;
+    }
+
+    .info-wrapper {
+        height: fit-content;
+        width: 25vw;
+        margin: 2em 0 4em 0;
+        font-size: 1.1rem;
+    }
+
+    .work-container {
+        width: 27vw;
+        margin: 1.5em 0 2em 0;
+    }
+
 }
