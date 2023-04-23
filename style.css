@@ -124,21 +124,22 @@ nav {
 
 .work-group {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
   justify-items: center;
-  margin-bottom: 1.5em;
+  /* margin-bottom: 1.5em; */
   padding: 0;
 }
 
 .work-container {
-  width: 40vw;
-  margin-bottom: 1em;
+  width: 90%;
+  margin-bottom: 2em;
 }
 
 .work-shot {
   width: 100%;
-  aspect-ratio: 16/9; /* placeholder, bc shots'll be 16:9 anyway */
-  outline: 1px white solid; /* REMOVE later */
+  /* aspect-ratio: 16/9; /* placeholder
+  outline: 1px white solid; /* for viz purposes */
 }
 
 .work-name {
@@ -149,11 +150,11 @@ nav {
 
 .work-description {
   font-size: 0.9rem;
-  margin: 0.2em 0 0.5em 0;
+  margin: 0.3em 0 0.5em 0;
 }
 
 .work-link {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: bold;
   text-decoration: underline;
 }
