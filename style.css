@@ -126,14 +126,14 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 2em;
   justify-items: center;
-  /* margin-bottom: 1.5em; */
+  margin-bottom: 0.5em;
   padding: 0;
 }
 
 .work-container {
   width: 90%;
-  margin-bottom: 2em;
 }
 
 .work-shot {
@@ -166,7 +166,7 @@ nav {
   font-size: 1.1rem;
   margin: 0 auto;
   padding: 1.1em;
-  width: 13.5em;
+  width: 13em;
   height: 1.5em;
   justify-content: center;
   align-items: center;
@@ -203,7 +203,7 @@ nav {
   font-size: 1.1rem;
   font-weight: bold;
   justify-content: flex-start;
-  margin: 1.2em 0;
+  margin: 1.2em 0 1.2em 1em;
 }
 
 .resume-pdf {
