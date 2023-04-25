@@ -233,8 +233,8 @@ nav {
     margin: 1.5em 5em;
   }
 
-  .work-container {
-    width: 35vw;
+  .work-section {
+    margin-bottom: 3rem;
   }
 }
 
@@ -271,14 +271,15 @@ nav {
   .nav-container {
     display: flex;
     margin: 0;
+    gap: 2em;
   }
 
   .nav-item {
     font-size: 1.32rem;
-    padding: 0.6em 1em;
+    padding: 0.6em 0;
   }
 
-  .nav-item:hover {
+  #work .nav-item:hover {
     background: none;
     color: inherit;
     transition: none;
@@ -289,9 +290,9 @@ nav {
 
   .info-wrapper {
     height: fit-content;
-    width: 50vw;
+    /* width: 50vw;*/
     margin: 2em 0 4em 0;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   /* SECTIONS */
@@ -302,13 +303,25 @@ nav {
   }
 
   /* WORK */
+  .work-section {
+    margin-bottom: 1.5rem;
+  }
 
   .work-group {
-    margin-bottom: 3.3em;
+    margin-bottom: 4em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 0;
   }
 
   .work-container {
-    margin: 1.5em 0 2em 0;
+    width: 37vw;
+    margin: 0;
+  }
+
+  .work-container:last-of-type {
+    width: 50vw;
+    grid-area: 2 / 1 / 3 / 3;
   }
 
   .work-name {
@@ -329,7 +342,7 @@ nav {
 
   .mail-button {
     font-size: 1.24rem;
-    margin: 2em 0 1.4em 0;
+    margin: 0 0 1.4em 0;
     height: 1.7em;
     align-items: center; /* ? */
   }
