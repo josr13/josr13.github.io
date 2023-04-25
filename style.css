@@ -45,6 +45,11 @@ header {
   margin: 0;
 }
 
+.title:hover {
+  color: hsl(212, 90%, 50%);
+  transition: 750ms ease-in-out;
+}
+
 .menu-svg {
   width: 2em;
   margin: 0;
@@ -157,6 +162,22 @@ nav {
   font-size: 0.95rem;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.work-link:hover {
+  color: hsl(219, 90%, 48%);
+  text-decoration: underline 0.1em hsl(219, 94%, 50%);
+  transition: 150ms ease-in-out;
+}
+
+.work-link:hover::before {
+  content: "👨‍💻 ";
+  transition: 150ms ease-in-out;
+}
+
+.work-link:active {
+  color: hsl(219, 90%, 25%);
+  transition: 300 ease-in-out;
 }
 
 /* CONTACT */
@@ -279,12 +300,34 @@ nav {
     padding: 0.6em 0;
   }
 
-  #work .nav-item:hover {
+  .nav-item:before {
+    content: "";
+    background: var(--color-txt-hover, white);
+    display: block;
+    position: relative;
+    bottom: -2rem;
+    width: 0;
+    height: 0.1em;
+    transition: all 300ms ease-in-out;
+  }
+
+  .nav-item:hover {
+    background-color: inherit;
+    color: var(--color-txt-hover, white);
+    /* text-decoration: underline 0.1em var(--color-txt-hover); */
+    transition: color 300ms ease-in-out;
+  }
+
+  .nav-item:hover::before {
+    width: 100%;
+  }
+
+  /* #work .nav-item:hover {
     background: none;
     color: inherit;
     transition: none;
     text-decoration: underline;
-  }
+  } */
 
   /* INFO */
 
