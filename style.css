@@ -219,6 +219,26 @@ nav {
   content: "📧\00a0";
 } /* not needed? */
 
+.github {
+  font-size: 1.15rem;
+}
+
+.github-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.github-link:hover {
+  color: hsl(219, 90%, 48%);
+  text-decoration: underline 0.1em hsl(219, 94%, 50%);
+  transition: 150ms ease-in-out;
+}
+
+.github-link:active {
+  color: hsl(219, 90%, 25%);
+  transition: 300 ease-in-out;
+}
+
 .resume {
   display: flex;
   font-size: 1.1rem;
