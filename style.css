@@ -185,7 +185,7 @@ nav {
 .mail-button {
   display: flex;
   font-size: 1.1rem;
-  margin: 0 auto;
+  margin: 0 auto 1.4em;
   padding: 1.1em;
   width: 13em;
   height: 1.5em;
@@ -221,6 +221,7 @@ nav {
 
 .github {
   font-size: 1.15rem;
+  margin-left: 1em;
 }
 
 .github-link {
