@@ -1,10 +1,13 @@
-# Mi portafolio: (josr13.github.io)[https://josr13.github.io/]
+# Mi portafolio: [josr13.github.io](https://josr13.github.io/)
 
-Como desarrollador web front-end, mi portafolio incluye una variedad de proyectos finalizados. Cada proyecto incluye una descripción detallada, capturas de pantalla y un enlace para probarlo en línea.
+Como desarrollador web, mi portafolio incluye una variedad de proyectos finalizados. Cada proyecto incluye una descripción detallada, capturas de pantalla y un enlace para probarlo en línea.
+Estos páginas web son responsivas, es decir, también pueden ser visualizadas en un formato móvil.
 
-## Tecnologías utilizadas
+## Tecnologías
 
-- JavaScript
+- ReactJS
+- React Hooks
+- JavaScript (ES6+)
 - CSS3
 - HTML5
 - Sass (SCSS)
@@ -17,10 +20,8 @@ Como desarrollador web front-end, mi portafolio incluye una variedad de proyecto
 
 ## Herramientas y plataformas
 
-- Visual Studio Code
 - Git y GitHub
 - GitHub Pages
-
-## Próximamente
-
-- Proyectos en ReactJS creados con Vite
+- Vite
+- Vercel
+- Visual Studio Code
